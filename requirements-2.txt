@@ -1,0 +1,25 @@
+# ── Core scientific stack ────────────────────────────────────────────
+numpy>=1.23.0,<2.0
+pandas==3.0.3
+scipy==1.17.1
+
+# ── Machine learning / GP ────────────────────────────────────────────
+tensorflow==2.21.0
+tensorflow-probability==0.25.0
+gpflow==2.11.1
+scikit-learn==1.9.0
+
+# ── Plotting ─────────────────────────────────────────────────────────
+matplotlib==3.11.0
+plotly==6.8.0
+python-ternary==1.0.8
+
+# ── Notes ────────────────────────────────────────────────────────────
+# stdlib modules used (no install needed):
+#   re        - LSV filename parsing
+#   pathlib   - file path handling
+#   warnings  - suppress TF/GPflow verbosity
+#
+# numpy range >=1.23,<2.0 — gpflow 2.11.1 requires numpy<2
+# pip will pick highest available pre-built wheel for your Python version
+# Install with: pip install -r requirements.txt --only-binary :all:
